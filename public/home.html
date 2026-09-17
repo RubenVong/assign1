@@ -25,16 +25,39 @@
             CSCE 41333 Cloud App Development Simple SPA
         </a>
     </nav>
+
+    <!-- dialog popup -->
+    <dialog id="userPopup">
+        <h3>Create New User</h3>
+        <form id="userForm">
+            <label>Username:</label>
+            <input id="username" required>
+            <br><br>
+            <label>First Name:</label>
+            <input id="firstname" required>
+            <br><br>
+            <label>Last Name:</label>
+            <input id="lastname" required>
+            <br><br>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label>Password:</label>
+            <input id="password" required>
+            <br><br>
+            <button type="submit" id="newuser" class="btn btn-primary">Create</button>
+        </form>
+        <button type="button" id="delete" class="btn btn-primary">Cancel</button>
+    </dialog>
+
     <div class="container">
         <div class="col">
             <button id="refresh" class="btn btn-primary">Refresh Users</button>
+            <button id="create" class="btn btn-primary">Create User</button>
             <div id="message"></div>
-            <table id="usertable" class="table table-bordered table-striped">
-
-            </table>
+            <table id="userTable" class="table table-bordered table-striped"></table>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
